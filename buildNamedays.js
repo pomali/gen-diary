@@ -52,6 +52,6 @@ let b = getNamedayIcs()
 
 let out = Object.keys(a).sort().map((k) => [a[k] === b[k] ? a[k]: [a[k], b[k]], k])
 console.log(out)
-fs.writeFileSync('namesday.json', JSON.stringify(out))
+fs.writeFileSync('namedays.json', JSON.stringify(out))
 
 // vim: set ts=2 sw=2 tw=0 et :
